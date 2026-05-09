@@ -44,3 +44,25 @@ pip install PyQt6 pypdf pyinstaller
 ```bash
 python main.py
 ```
+
+## 📦 打包成 .exe 執行檔
+
+使用 PyInstaller 打包成單一 exe 檔案：
+
+```bash
+pyinstaller --onefile --windowed --name PDF解鎖工具 main.py
+```
+
+打包完成後，執行檔位於：
+
+```
+dist/PDF解鎖工具.exe
+```
+
+### 參數說明
+
+| 參數 | 說明 |
+|------|------|
+| `--onefile` | 打包成單一 exe 檔案 |
+| `--windowed` | 不顯示命令提示字元視窗（適合 GUI 程式）|
+| `--name` | 指定輸出的執行檔名稱 |
